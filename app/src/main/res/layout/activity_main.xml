@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="‹"
+            android:textSize="34sp"
+            android:textColor="#222222"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:hint="Search Product"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:background="@drawable/product_background"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:text="⌕"
+            android:textSize="27sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#1675E8"/>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="▦"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#333333"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="15dp"
+        android:orientation="horizontal"
+        android:background="#FAFAFA">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Most Popular"
+            android:textColor="#222222"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter  ⚙"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:clipToPadding="false"
+        android:background="#FFFFFF"/>
+
+</LinearLayout>
